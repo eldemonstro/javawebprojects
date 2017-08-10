@@ -1,1 +1,1 @@
-'# Java Projects for School' 
+# Java Projects for School
