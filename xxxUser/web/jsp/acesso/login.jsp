@@ -8,8 +8,8 @@
     <body>
         <h1>Hello World!</h1>
         <form name="LoginSistema" action="menu.jsp" method="POST">
-            Login: <input type="text" name="login" value=""> <br>
-            Senha: <input type="password" name="password" value=""> <br>
+            Login: <input type="text" name="LOGIN" value=""> <br>
+            Senha: <input type="password" name="SENHA" value=""> <br>
             <input type="submit" name="submit" value="Ok">
         </form>
     </body>
