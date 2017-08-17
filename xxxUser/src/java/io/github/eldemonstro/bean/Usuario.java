@@ -8,26 +8,36 @@ package io.github.eldemonstro.bean;
  * @author demon
  */
 public class Usuario {
-    private String id;
+    private int id;
+    private String nome;
     private String login;
     private String senha;
     private String status;
     private String tipo;
 
-    public Usuario(String id, String login, String senha, String status, 
-            String tipo) {
+    public Usuario(int id, String nome, String login, String senha, 
+            String status, String tipo) {
         this.id = id;
+        this.nome = nome;
         this.login = login;
         this.senha = senha;
         this.status = status;
         this.tipo = tipo;
     }
 
-    public String getId() {
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
