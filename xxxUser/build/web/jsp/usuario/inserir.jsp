@@ -7,7 +7,7 @@
         <title>Inserir Usuario</title>
     </head>
     <body>
-        <form name="InserirValidado" action="validarInserir.jsp" method="POST">
+        <form name="InserirValidado" action="validaInserir.jsp" method="POST">
             Login: <input type="text" name="LOGIN" value=""> <br>
             Senha: <input type="password" name="SENHA" value=""> <br>
             Status: <input type="text" name="STATUS" value=""> <br>

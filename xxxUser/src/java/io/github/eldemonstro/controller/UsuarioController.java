@@ -18,4 +18,9 @@ public class UsuarioController {
         usu.setTipo("ADM");
         return usu;
     }
+    
+    public Usuario insereUsuario(Usuario usu){
+        usu.setId("1");
+        return usu;
+    }
 }
