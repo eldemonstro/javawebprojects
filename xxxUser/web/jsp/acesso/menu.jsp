@@ -5,9 +5,7 @@
 <%
     String login = request.getParameter("LOGIN");
     String senha = request.getParameter("SENHA");
-    Usuario usu = new Usuario();
-    usu.setLogin(login);
-    usu.setSenha(senha);
+    Usuario usu = new Usuario("", login, senha, "", "");
     UsuarioController usuController = new UsuarioController();
     Usuario usuValidado = usuController.validaUsuario(usu);
 %>
@@ -22,6 +20,7 @@
         Login = <%=usuValidado.getLogin()%> <br>
         Senha = <%=usuValidado.getSenha()%> <br>
         Tipo = <%=usuValidado.getTipo()%> <br>
-        Status = <%=usuValidado.getStatus()%>
+        Status = <%=usuValidado.getStatus()%> <br>
+        <a href="../usuario/inserir.jsp">Usuario</a>
     </body>
 </html>

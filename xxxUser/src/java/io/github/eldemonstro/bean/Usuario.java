@@ -14,6 +14,15 @@ public class Usuario {
     private String status;
     private String tipo;
 
+    public Usuario(String id, String login, String senha, String status, 
+            String tipo) {
+        this.id = id;
+        this.login = login;
+        this.senha = senha;
+        this.status = status;
+        this.tipo = tipo;
+    }
+
     public String getId() {
         return id;
     }
