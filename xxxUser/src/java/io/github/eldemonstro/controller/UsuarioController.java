@@ -13,6 +13,7 @@ import io.github.eldemonstro.bean.Usuario;
  */
 public class UsuarioController {
     public Usuario validaUsuario(Usuario usu) {
+        usu.setId("1");
         usu.setStatus("ATIVO");
         usu.setTipo("ADM");
         return usu;

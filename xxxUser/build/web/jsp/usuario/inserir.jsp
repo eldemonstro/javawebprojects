@@ -1,17 +1,18 @@
-<%-- 
-    Document   : inserir
-    Created on : 17/08/2017, 09:47:17
-    Author     : demon
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Inserir Usuario</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form name="InserirValidado" action="validarInserir.jsp" method="POST">
+            Login: <input type="text" name="LOGIN" value=""> <br>
+            Senha: <input type="password" name="SENHA" value=""> <br>
+            Status: <input type="text" name="STATUS" value=""> <br>
+            Tipo: <input type="text" name="TIPO" value=""> <br>
+            <input type="submit" name="submit" value="Ok">
+        </form>
     </body>
 </html>

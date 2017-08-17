@@ -17,6 +17,7 @@
         <title>Menu</title>
     </head>
     <body>
+        Id = <%=usuValidado.getId()%> <br>
         Login = <%=usuValidado.getLogin()%> <br>
         Senha = <%=usuValidado.getSenha()%> <br>
         Tipo = <%=usuValidado.getTipo()%> <br>
