@@ -143,11 +143,11 @@ public class UsuarioDao {
         while (rs.next()) {      
             // criando o objeto Usuario
             usu.setId(rs.getInt(1));
-            usu.setNome(rs.getString(2));
-            usu.setLogin(rs.getString(3));
-            usu.setSenha(rs.getString(4));
-            usu.setStatus(rs.getString(5));
-            usu.setTipo(rs.getString(6));
+            usu.setLogin(rs.getString(2));
+            usu.setSenha(rs.getString(3));
+            usu.setStatus(rs.getString(4));
+            usu.setTipo(rs.getString(5));
+            usu.setNome(rs.getString(6));
             // adiciona o usu à lista de usus
         }
         

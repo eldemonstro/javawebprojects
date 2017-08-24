@@ -22,6 +22,7 @@
         Senha = <%=usuValidado.getSenha()%> <br>
         Tipo = <%=usuValidado.getTipo()%> <br>
         Status = <%=usuValidado.getStatus()%> <br>
+        Nome = <%=usuValidado.getNome()%> <br>
         <a href="../usuario/inserir.jsp">Usuario</a>
     </body>
 </html>

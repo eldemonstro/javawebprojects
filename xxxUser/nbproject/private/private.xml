@@ -10,6 +10,8 @@
             <file>file:/C:/Users/demon/Documents/NetBeansProjects/xxxUser/web/jsp/acesso/menu.jsp</file>
             <file>file:/C:/Users/demon/Documents/NetBeansProjects/xxxUser/src/java/io/github/eldemonstro/bean/Usuario.java</file>
             <file>file:/C:/Users/demon/Documents/NetBeansProjects/xxxUser/web/jsp/usuario/validaInserir.jsp</file>
+            <file>file:/C:/Users/demon/Documents/NetBeansProjects/xxxUser/src/java/io/github/eldemonstro/db/UsuarioDao.java</file>
+            <file>file:/C:/Users/demon/Documents/NetBeansProjects/xxxUser/src/java/io/github/eldemonstro/util/ConexaoDB.java</file>
         </group>
     </open-files>
 </project-private>
