@@ -5,7 +5,7 @@
  */
 package io.github.eldemonstro.robo;
 
-import java.util.Random;
+import java.util.*;
 
 /**
  *
@@ -17,6 +17,19 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String menu = "Robo\n1-Criar\n2-Soma\n3-Subtracao\n4-Multiplicacao"
+                + "\n5-Divisao\n6-Bateria\n7-Demo\n8-Sair";
+        boolean sair = false;
+        
+        while (!sair) {
+            System.out.println(menu);
+            while (!sc.hasNextInt()) sc.next();
+            int num1 = sc.nextInt();
+            System.out.println(num1);
+            sair = true;
+        }
 
         Robo robo = new Robo("Mineirinho", "12/03/06", 255);
         System.out.println("Criado robo: " + robo.getNome() + " em " + robo.getDtFabr()
