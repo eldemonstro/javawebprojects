@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.github.eldemontro.db;
+package io.github.eldemonstro.db;
 
 import io.github.eldemonstro.util.ConexaoDB;
 import java.sql.ResultSet;

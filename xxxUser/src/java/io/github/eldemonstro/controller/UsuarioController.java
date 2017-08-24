@@ -6,7 +6,7 @@
 package io.github.eldemonstro.controller;
 
 import io.github.eldemonstro.bean.Usuario;
-import io.github.eldemontro.db.UsuarioDao;
+import io.github.eldemonstro.db.UsuarioDao;
 import java.sql.SQLException;
 
 /**
