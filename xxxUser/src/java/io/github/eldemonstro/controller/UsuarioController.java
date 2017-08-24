@@ -6,20 +6,21 @@
 package io.github.eldemonstro.controller;
 
 import io.github.eldemonstro.bean.Usuario;
+import io.github.eldemontro.db.UsuarioDao;
+import java.sql.SQLException;
 
 /**
  *
  * @author demon
  */
 public class UsuarioController {
-    public Usuario validaUsuario(Usuario usu) {
-        usu.setId(1);
-        usu.setStatus("ATIVO");
-        usu.setTipo("ADM");
+    public Usuario validaUsuario(Usuario usu) throws SQLException, ClassNotFoundException {
+        UsuarioDao usuDao = new UsuarioDao();
+        usu = usuDao.validaLogin(usu);
         return usu;
     }
     
-    public Usuario insereUsuario(Usuario usu){
+    public Usuario inserirUsuario(Usuario usu) {
         usu.setId(1);
         return usu;
     }

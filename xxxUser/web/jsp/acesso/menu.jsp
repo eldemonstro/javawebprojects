@@ -5,9 +5,9 @@
 <%
     String login = request.getParameter("LOGIN");
     String senha = request.getParameter("SENHA");
-    Usuario usu = new Usuario("", login, senha, "", "");
-    UsuarioController usuController = new UsuarioController();
-    Usuario usuValidado = usuController.validaUsuario(usu);
+    Usuario usu = new Usuario(0,"",login,senha,"","");
+    UsuarioController usucont = new UsuarioController();
+    Usuario usuValidado = usucont.validaUsuario(usu);
 %>
 
 <!DOCTYPE html>

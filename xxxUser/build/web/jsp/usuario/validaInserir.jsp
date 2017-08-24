@@ -9,13 +9,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
+    String nome = request.getParameter("Nome");
     String login = request.getParameter("LOGIN");
     String senha = request.getParameter("SENHA");
     String status = request.getParameter("STATUS");
     String tipo = request.getParameter("TIPO");
-    Usuario usu = new Usuario("", login, senha, status, tipo);
-    UsuarioController usuController = new UsuarioController();
-    Usuario usuValidado = usuController.validaUsuario(usu);
+    Usuario usu = new Usuario(0, nome,login,senha,status,tipo);
+    UsuarioController usucont = new UsuarioController();
+    usu = usucont.inserirUsuario(usu);
 %>
 
 <!DOCTYPE html>
@@ -25,11 +26,11 @@
         <title>Validar Usuario</title>
     </head>
     <body>
-        Id = <%=usuValidado.getId()%> <br>
-        Login = <%=usuValidado.getLogin()%> <br>
-        Senha = <%=usuValidado.getSenha()%> <br>
-        Tipo = <%=usuValidado.getTipo()%> <br>
-        Status = <%=usuValidado.getStatus()%> <br>
+        Id = <%=usu.getId()%> <br>
+        Login = <%=usu.getLogin()%> <br>
+        Senha = <%=usu.getSenha()%> <br>
+        Tipo = <%=usu.getTipo()%> <br>
+        Status = <%=usu.getStatus()%> <br>
         <a href="../usuario/inserir.jsp">Usuario</a>
     </body>
 </html>
