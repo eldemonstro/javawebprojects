@@ -1,5 +1,8 @@
 package io.github.eldemonstro.robo;
 
+/*
+ * @author: Fabricio Bezerra (github.com/eldemontro)
+ */
 public class Robo {
 
     private String nome;
