@@ -24,6 +24,10 @@ public class Usuario {
         this.status = status;
         this.tipo = tipo;
     }
+    
+    public Usuario() {
+        
+    }
 
     public String getNome() {
         return nome;
